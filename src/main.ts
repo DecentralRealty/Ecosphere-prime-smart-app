@@ -69,8 +69,8 @@ async function bootstrap() {
   app.use(compression());
 
   const config = new DocumentBuilder()
-  .setTitle('Ikad - Restful API')
-  .setDescription(`A comprehensive set of tools to communicate with the Ikad Smart Node.`)
+  .setTitle('Ecosphere Prime - Restful API')
+  .setDescription(`A comprehensive set of tools to communicate with the Ecosphere Prime Smart Node.`)
   .setVersion('1.0')
   .addBearerAuth({
     type: 'http',
@@ -78,7 +78,7 @@ async function bootstrap() {
     scheme: 'Bearer',
     bearerFormat: 'Api Key',
     in: 'Header',
-    description: `The API Key is used to authenticate requests to the Ikad Smart Node.`,
+    description: `The API Key is used to authenticate requests to the Ecosphere Prime Smart Node.`,
   }, 'Bearer')
   .addSecurityRequirements('Bearer')
   .build();
