@@ -74,6 +74,12 @@ export namespace IVC {
                 description: 'The balance of the wallet'
             })
             balance: IHedera.IAccountBalance
+
+            @ApiProperty({
+                type: String,
+                description: 'The private key of the wallet'
+            })
+            privateKey?: string
         }
 
         export class History extends IVC.Wallet.Entity implements I_IVC.IWallet.IHistory {

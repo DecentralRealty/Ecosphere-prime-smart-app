@@ -184,7 +184,8 @@ export class WalletsService implements OnModuleInit {
                         owner: createWalletRequest.userId,
                         account: {
                             id: receipt.accountId.toString(),
-                            balance: null
+                            balance: null,
+                            privateKey: privateKey.toString() // Saved to demo on Hackathon
                         },
                         transactions: []
                     });
